@@ -11,7 +11,7 @@ class filter_state extends State<filter>{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Filters',style: TextStyle(color: Colors.black),),backgroundColor: Colors.white,centerTitle: true,),
+      //appBar: AppBar(title: Text('Filters',style: TextStyle(color: Colors.black),),backgroundColor: Colors.white,centerTitle: true,),
       body: Container(
         decoration: BoxDecoration(color: Color(0xfff7f7f7)),
         //padding: EdgeInsets.all(10),

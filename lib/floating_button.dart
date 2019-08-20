@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'filter.dart';
 class floating_button extends StatefulWidget {
 
   floating_button_state createState()=>floating_button_state();
@@ -13,9 +14,11 @@ class floating_button_state extends State<floating_button>{
           return Padding(
             padding: const EdgeInsets.all(8.0),
             child: Container(
-              child: ListView(
+              child:
+                //filter(),
+              ListView(
                 children: [
-                  Text('afds'),
+                  Center(child: Text('Filters',style: TextStyle(fontWeight: FontWeight.w600),textScaleFactor: 3,)),
                   Text('afds2'),
                   Text('afds3'),
                   Text('afds4'),
