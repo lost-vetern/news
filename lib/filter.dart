@@ -14,13 +14,15 @@ class filter_state extends State<filter>{
       //appBar: AppBar(title: Text('Filters',style: TextStyle(color: Colors.black),),backgroundColor: Colors.white,centerTitle: true,),
       body: Container(
         decoration: BoxDecoration(color: Color(0xfff7f7f7)),
-        //padding: EdgeInsets.all(10),
+        padding: EdgeInsets.all(10),
         child: Center(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             mainAxisSize: MainAxisSize.max,
             children: <Widget>[
+              SizedBox(height: 15,),
+              Text("Filters",textScaleFactor: 3,textAlign: TextAlign.center,style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontFamily: 'Montserrat'),),
               SizedBox(height: 15,),
               Card(
                 color: Color.fromRGBO(255, 255, 255, .6),
@@ -44,14 +46,12 @@ class filter_state extends State<filter>{
                   ),
               ),
 
-              SizedBox(height:(english)?10:0,),
             ////////////////////////////////////  //News Type
-              Opacity(opacity: (english)?1.0:0.0,
+              Visibility(visible: (english)?true:false,
                 child: Card(color: Color.fromRGBO(255, 255, 255, .6),
                   child: Padding(padding: const EdgeInsets.only(left: 10,right: 10,bottom: 20,top: 20),
                     child: Column(
                       children: <Widget>[
-                       // Opacity(opacity: (english)?1.0:0.0,
                           Row(mainAxisAlignment: MainAxisAlignment.start,children: <Widget>[Text("News Type",textScaleFactor: 1.2,style: TextStyle(fontWeight: FontWeight.bold,fontFamily: 'Montserrat'),)],),
                           SizedBox(height: 5,),
                           Row(mainAxisAlignment: MainAxisAlignment.start,
@@ -69,7 +69,7 @@ class filter_state extends State<filter>{
                   ),
                 ),
               ),
-              SizedBox(height:(english)?20:0,),
+              SizedBox(height:5),
               /////////////////////////grid
               Expanded(child: (english)?(international)?englishInternationalgrid():englishRegionalgrid():urdunewsgrid()),
               //Expanded(child: englishnewsgrid()),

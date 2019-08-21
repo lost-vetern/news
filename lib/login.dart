@@ -157,7 +157,7 @@ class loginState extends State<mylogin>with TickerProviderStateMixin {
                   ),
                 ),*/
             SizedBox(height: 50.0),
- //////////////////////////////REGISTER
+ /////////////////////////////////////////////////////REGISTER
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[

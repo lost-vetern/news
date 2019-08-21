@@ -8,10 +8,7 @@ import 'floating_button.dart';
 import 'appdrawr.dart';
 class home extends StatefulWidget{
   Text text=Text("");
-  var local_lang="English";
 
-
-  // home({this.local_lang});
   home_state  createState()=> home_state();
 }
 
